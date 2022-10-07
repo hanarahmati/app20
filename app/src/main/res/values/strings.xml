@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">My Application20</string>
+    <string name="app_name">خانه فناوری تهران</string>
+    <string name="android_class">کلاس اندروید</string>
+
+    <string name="mentor_name">hananeh rahmatzehi</string>
+    <string name="mentor">mentor</string>
+    <string name="to_do_list">todo list</string>
+    <string name="edit_profile">edit profile</string>
+    <string name="layouts">layouts</string>
+    <string name="lifecycles">lifecycles</string>
+    <string name="internet">internet</string>
+    <string name="database">database</string>
+    <string name="arch">architecture</string>
+    <string name="themes">themes</string>
 </resources>
