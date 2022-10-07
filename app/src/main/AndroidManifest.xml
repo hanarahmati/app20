@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="co.fanavari.myapplication20">
 
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,6 +16,16 @@
         android:theme="@style/Theme.MyApplication20"
         tools:targetApi="31">
         <activity
+            android:name=".IntentExamplesActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <data android:scheme="mailto" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.SET_ALARM" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".DashboardActivity"
             android:exported="true">
             <intent-filter>
@@ -22,9 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity" />
-
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
