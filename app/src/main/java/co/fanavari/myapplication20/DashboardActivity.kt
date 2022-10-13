@@ -29,6 +29,10 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.logOutButton.setOnClickListener {
+            showToast("test")
+        }
+
         val openIntentForResult =
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
                 if(it.resultCode == Activity.RESULT_OK)
@@ -56,7 +60,16 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.lifeCycleCard.setOnClickListener {
+            val intent = Intent(this,ComponentActivity::class.java)
+            startActivity(intent)
+        }
 
+
+        binding.layoutCards.setOnClickListener {
+            val intent = Intent(this,NavigationActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

@@ -38,7 +38,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageButtonBack"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageButtonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/ic_back" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/logOutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
