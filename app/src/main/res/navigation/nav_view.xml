@@ -26,4 +26,9 @@
             android:name="number"
             app:argType="integer" />
     </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="co.fanavari.myapplication20.ui.gallery.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" />
 </navigation>
