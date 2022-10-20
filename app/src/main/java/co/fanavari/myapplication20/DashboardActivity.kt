@@ -9,6 +9,8 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import co.fanavari.myapplication20.databinding.ActivityDashboardBinding
 import com.google.android.material.button.MaterialButton
+import dagger.hilt.android.AndroidEntryPoint
+
 
 class DashboardActivity : AppCompatActivity() {
 
