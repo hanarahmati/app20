@@ -73,6 +73,11 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.internetCards.setOnClickListener {
+            val intent = Intent(this,CoroutinesActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     override fun onStart() {
